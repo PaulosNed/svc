@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
+import Home from "./pages/Home";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
 
         <main className="flex-auto">
           <Routes>
-            {/* <Route path="/" element={<Home />}/> */}
+            <Route path="/" element={ <Home/>}/>
           </Routes>
         </main>
 
