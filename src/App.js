@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import { useState } from "react";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="min-h-screen flex flex-col">
-        <header className="w-full z-40 fixed top-0">
+        <header className="w-full z-40 fixed top-0 h-40">
           <NavBar selectedPage={selectedPage} setSelectedPage = {setSelectedPage}/>
         </header>
 
@@ -20,7 +21,9 @@ function App() {
           </Routes>
         </main>
 
-        <footer></footer>
+        <footer className="w-full bg-black py-10 px-24">
+          <Footer selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+        </footer>
       </div>
     </BrowserRouter>
   );

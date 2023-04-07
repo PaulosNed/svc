@@ -5,7 +5,11 @@ module.exports = {
   ],
   mode: 'jit',
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        inter: ['Urbanist', 'serif'] 
+      }
+    },
   },
   plugins: [],
 }
