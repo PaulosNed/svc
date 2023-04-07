@@ -1,8 +1,11 @@
 import React from 'react'
+
 import frontImage from '../undraw_education_f8ru.svg';
 import value from '../assets/undraw_graduation_re_gthnV.svg'
 import vission from '../assets/undraw_business_plan_re_0v81.svg'
 import mission from '../assets/undraw_educator_re_ju47.svg'
+
+import Card from '../components/Card';
 
 export default function Home() {
   return (
@@ -96,9 +99,56 @@ export default function Home() {
             <div className='flex flex-col items-center'>
               <p className='text-xl font-inter font-bold uppercase'>Our programs</p>
               <div className='flex gap-5'>
-                
+                <Card 
+                  title="TVET"
+                  details={['Basic clerik wors, ']}
+                />
+                <Card 
+                  title="TVET"
+                  details={['Basic clerik wors, ']}
+                />
+                <Card 
+                  title="TVET"
+                  details={['Basic clerik wors, ']}
+                />
               </div>
             </div>
+          </div>
+          
+          
+          <div className='w-full mt-32 flex flex-col gap-5 md:gap-0 md:flex-row items-center md:space-x-20'>
+              <div className='md:w-1/2 bg-slate-50 rounded-xl p-2'>
+                <img src={mission} alt="" className='w-full h-72 rounded-xl'/>
+              </div>
+              <div className='md:w-1/2 flex flex-col items-start gap-3 md:gap-8'>
+                <p className='text-xl font-bold uppercase'>our mission</p>
+                <p className='text-slate-500'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque labore a quo accusamus nobis eos? Sapiente libero ea iste sunt exercitationem fugiat quod incidunt velit! Veniam at commodi neque tempore.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut quas cum mollitia debitis minima excepturi, assumenda qui cumque eum harum praesentium sequi dignissimos fuga aliquid dolorem. Velit eius harum voluptates?</p>
+              </div>
+          </div>
+          
+          
+          <div className='w-full mt-32 flex flex-col-reverse gap-5 md:gap-0 md:flex-row items-center md:space-x-20'>
+              <div className='md:w-1/2 flex flex-col items-start gap-3 md:gap-8'>
+                <p className='text-xl font-bold uppercase'>our Vision</p>
+                <p className='text-slate-500'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque labore a quo accusamus nobis eos? Sapiente libero ea iste sunt exercitationem fugiat quod incidunt velit! Veniam at commodi neque tempore.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut quas cum mollitia debitis minima excepturi, assumenda qui cumque eum harum praesentium sequi dignissimos fuga aliquid dolorem. Velit eius harum voluptates?</p>
+              </div>
+              <div className='md:w-1/2 bg-slate-50 rounded-xl p-2'>
+                <img src={vission} alt="" className='w-full h-72 rounded-xl'/>
+              </div>
+          </div>
+          
+          
+          <div className='w-full mt-32 flex flex-col gap-5 md:gap-0 md:flex-row items-center md:space-x-20'>
+              <div className='md:w-1/2 bg-slate-50 rounded-xl p-2'>
+                <img src={value} alt="" className='w-full h-72  rounded-xl'/>
+              </div>
+              <div className='md:w-1/2 flex flex-col items-start gap-3 md:gap-8'>
+                <p className='text-xl font-bold uppercase'>our value</p>
+                <p className='text-slate-500'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque labore a quo accusamus nobis eos? Sapiente libero ea iste sunt exercitationem fugiat quod incidunt velit! Veniam at commodi neque tempore.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut quas cum mollitia debitis minima excepturi, assumenda qui cumque eum harum praesentium sequi dignissimos fuga aliquid dolorem. Velit eius harum voluptates?</p>
+              </div>
           </div>
         </div>
       </section>
